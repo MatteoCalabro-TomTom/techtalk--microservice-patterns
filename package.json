@@ -1,0 +1,21 @@
+{
+  "name": "techtalk--microservice-patterns",
+  "version": "1.0.0",
+  "description": "Microservices patterns: call me, message me, maybe I will care!",
+  "main": "index.md",
+  "repository": "https://github.com/matteocalabro-tomtom/techtalk--microservice-patterns.git",
+  "author": "Matteo Calabrò",
+  "license": "CC0 1.0 Universal",
+  "private": true,
+  "devDependencies": {
+    "@marp-team/marp-cli": "^0.18.1"
+  },
+  "scripts": {
+    "marp": "marp index.md",
+    "build:ppx": "yarn marp -o techtalk--microservice-patterns.pptx",
+    "build:html": "yarn marp -o techtalk--microservice-patterns.html --bespoke.progress=true",
+    "build:pdf": "yarn marp -o techtalk--microservice-patterns.pdf",
+    "build": "yarn build:html",
+    "watch": "yarn marp -w"
+  }
+}
